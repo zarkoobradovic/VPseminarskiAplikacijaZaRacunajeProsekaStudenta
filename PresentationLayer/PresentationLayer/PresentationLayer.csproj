@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88D95FB0-6386-4E6F-87CC-8621F6FDAD7B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PresentationLayer</RootNamespace>
+    <AssemblyName>PresentationLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CetvrtaGodinaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CetvrtaGodinaForma.Designer.cs">
+      <DependentUpon>CetvrtaGodinaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugaGodinaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrugaGodinaForma.Designer.cs">
+      <DependentUpon>DrugaGodinaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlavnaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlavnaForma.Designer.cs">
+      <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogovanjeForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogovanjeForma.Designer.cs">
+      <DependentUpon>LogovanjeForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PrvaGodinaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrvaGodinaForma.Designer.cs">
+      <DependentUpon>PrvaGodinaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrecaGodinaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrecaGodinaForma.Designer.cs">
+      <DependentUpon>TrecaGodinaForma.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CetvrtaGodinaForma.resx">
+      <DependentUpon>CetvrtaGodinaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugaGodinaForma.resx">
+      <DependentUpon>DrugaGodinaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlavnaForma.resx">
+      <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogovanjeForma.resx">
+      <DependentUpon>LogovanjeForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PrvaGodinaForma.resx">
+      <DependentUpon>PrvaGodinaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrecaGodinaForma.resx">
+      <DependentUpon>TrecaGodinaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{2B62642D-E1F1-436B-B1BF-7F0BFF424F31}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
+      <Project>{4044EC91-217E-4A62-A710-07972389ADF4}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
