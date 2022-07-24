@@ -1,1 +1,1 @@
-# VPseminarski---AplikacijaZaRacunajeProsekaStudenta
+# VPseminarski - AplikacijaZaRacunajeProsekaStudenta
